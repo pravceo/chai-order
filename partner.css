@@ -1,0 +1,73 @@
+/* Sidebar and Main Content Styles */
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 60px;
+    height: 100%;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.sidebar i {
+    color: white;
+    font-size: 24px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.sidebar i:hover {
+    color: #ff5722;
+}
+
+.main-content {
+    margin-left: 80px;
+    padding: 20px;
+}
+
+.navbar {
+    background-color: #ff5722;
+    padding: 15px;
+    color: white;
+    text-align: center;
+}
+
+.content-section {
+    display: none;
+}
+
+.content-section.active {
+    display: block;
+}
+
+form {
+    max-width: 500px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"], input[type="number"], input[type="file"], button {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+button {
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e64a19;
+}

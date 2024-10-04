@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai Shop - Registration</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Popup for User/Partner Selection -->
+    <div class="popup" id="popup">
+        <div class="container">
+            <h1 class="shop-title">Chai Shop</h1>
+            <h2 class="lm">Are you a User or a Chai Partner?</h2>
+            <div class="btn-group">
+                <button id="userBtn" class="btn">User</button>
+                <button id="partnerBtn" class="btn partner">Chai Partner</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- User Registration Form -->
+    <div class="form-container" id="userFormContainer" style="display:none;">
+        <h2 class="2m">User Registration</h2>
+        <form id="userForm">
+            <input type="text" id="userName" name="userName" required placeholder="Enter your name">
+            <input type="text" id="userMobile" name="userMobile" required placeholder="Enter your mobile number">
+            <button type="submit" class="btn">Send OTP <i class="fas fa-arrow-right"></i></button>
+        </form>
+    </div>
+
+    <!-- Partner Registration Form -->
+    <div class="form-container" id="partnerFormContainer" style="display:none;">
+        <h1 class="lm">Chai Shop Partner </h1>
+        <h2 class="re">Register</h2>
+        <form id="partnerForm">
+            <input type="text" id="partnerName" name="partnerName" required placeholder="Enter your name">
+            <input type="text" id="partnerMobile" name="partnerMobile" required placeholder="Enter your mobile number">
+            <input type="text" id="shopName" name="shopName" required placeholder="Enter your shop name">
+            <input type="text" id="shopAddress" name="shopAddress" required placeholder="Enter shop address">
+            <input type="file" id="shopImage" name="shopImage" required>
+            <button type="submit" class="btn">Send OTP <i class="fas fa-arrow-right"></i></button>
+        </form>
+    </div>
+
+    <!-- OTP Form -->
+    <div class="form-container" id="otpFormContainer" style="display:none;">
+        <h2 class="lm">Enter OTP</h2>
+        <form id="otpForm">
+            <input type="text" id="otp" name="otp" required placeholder="Enter OTP">
+            <button type="submit" class="btn">Verify OTP <i class="fas fa-arrow-right"></i></button>
+        </form>
+    </div>
+
+    <script src="index.js"></script>
+    <script src="partner.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
